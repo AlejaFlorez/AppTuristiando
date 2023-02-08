@@ -54,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        botonRestaurante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentHoteles=new Intent(MainActivity.this,Restaurantes.class);
+                startActivity(intentHoteles);
+
+            }
+        });
+
 
 
 
@@ -95,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (itemSeleccionado){
             case (R.id.opcion1):
-                Toast.makeText(this, "seleccionaste opcion1", Toast.LENGTH_SHORT).show();
+                Intent intento1 = new Intent(MainActivity.this, Acercade.class);
+                startActivity(intento1);
                 break;
 
             case (R.id.opcion2):
